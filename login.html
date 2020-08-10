@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="/assets/css/style.css" rel="stylesheet">
+
+</head>
+<body style="background: #ebeeef;">
+    
+    <div class="limiter">
+        <div class="container-login">
+            <div class="wrap-login">
+                <div class="background-image-login"></div>
+                <div class="background-login">
+                    <form action="#" class="login100" method="GET">
+                        <div class="mb-3">
+                            <input id="email" type="email" class="form-control input-border" placeholder="Informe seu e-mail de acesso.">
+                        </div>
+                        <div class="mb-3">
+                            <input id="senha" type="password" class="form-control input-border" placeholder="Informe sua senha.">
+                        </div>
+                        <div class="mt-4">
+                            <button type="submit" id="btnSubmit" class="btn btn-primary btn-block py-2">
+                                <span class="font-weight-bold">Login</span>
+                            </button>
+                        </div>
+
+                        <div class="mt-4">
+                            <center>
+                                <a href="#">
+                                    <span>Esqueceu sua senha?</span>
+                                </a>
+                            </center>
+                        </div>
+
+                    </form>
+
+                    <div>
+                        <a href="/index.html" class="btn btn-secondary btn-block py-2">
+                            <span class="font-weight-bold">Ir para página inicial</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script>
+
+        document.querySelector("form").addEventListener("submit", (event) => {
+            event.preventDefault();
+            document.querySelector("#btnSubmit").innerHTML = "<center><i class='fa-spin fa fa-spinner'></i></center>";
+            document.querySelector("#btnSubmit").disabled = true;
+            document.querySelector("form").submit();
+        })
+
+        window.onload = () => {
+            let url = window.location.href;
+            let uriPage = url.split("?page=");
+            if(uriPage[1]){
+                let form = document.querySelector("form");
+                if(form && uriPage[1]=="cliente"){
+                    form.action = "/cliente/index.html";
+                }else if(form && uriPage[1]=="dogwalker"){
+                    form.action = "/dogwalker/index.html";
+                }
+            }
+        }
+
+    </script>
+
+</body>
+</html>
