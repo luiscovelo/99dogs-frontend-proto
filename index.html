@@ -1,66 +1,75 @@
+<!DOCTYPE html>
+<html>
 
-<!doctype html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
+<head>
 
-    <title>Home</title>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <title>Home</title>
 
-    <!-- Custom styles for this template -->
-    <link href="/assets/css/cover.css" rel="stylesheet">
-    <link href="/assets/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+        <link href="./assets/css/default-style.css" rel="stylesheet">
 
-  </head>
+    </head>
+</head>
 
-  <body class="text-center">
+<body>
 
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
-        <div class="inner">
-          <h3 class="masthead-brand">
-            <img src="/assets/imgs/logo_size.jpg" alt="logo" width="120">
-          </h3>
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link" href="/login.html?page=dogwalker">Dashboard Dog Walker</a>
-            <a class="nav-link" href="/login.html?page=cliente">Dashboard Cliente</a>
-          </nav>
+    <nav>
+        <ul class="menu">
+            <li class="logo">
+                <a href="./index.html">
+                    <img src="./assets/imgs/logo_size.png" alt="" width="90">
+                </a>
+            </li>
+            <li class="item button secondary">
+                <a href="./login.html?page=dogwalker">Entrar como Dog Walker</a>
+            </li>
+            <li class="item button secondary">
+                <a href="./login.html?page=cliente">Entrar como Cliente</a>
+            </li>
+            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center">
+                    <img src="./assets/imgs/3723847.jpg" class="img-fluid mainImg" alt="Imagem principal">
+                </div>
+            </div>
         </div>
-      </header>
-
-      <main role="main" class="inner cover">
-        
-        <img src="/assets/imgs/3723847.jpg" alt="" width="600" class="img-fluid">
-        
-        <p style="margin-top: -50px;margin-bottom: 50px;">
-           Agora ficou mais fácil para você Dog Walker, controlar seus passeios tais como agenda, formas de pagamentos, etc. E para você cliente, encontre o passeador ideal para o seu cãozinho!
-        </p>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center">
+                    <p class="mainMessage">
+                        Agora ficou mais fácil para você Dog Walker, controlar seus passeios tais como agenda, formas de pagamentos, etc. E para você cliente, encontre o passeador ideal para o seu cãozinho!
+                    </p>
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-lg-6">
-                <a href="/criar-conta-profissional.html" class="btn btn-md btn-outline-success">Quero ser um Dog Walker</a>
+                <div class="text-center">
+                    <a href="./criar-conta-profissional.html" class="btn btn-md btn-outline-success btn-block">Quero ser um Dog Walker</a>
+                </div>
             </div>
+            <div class="clearFix"></div>
             <div class="col-lg-6">
-                <a href="/criar-conta-cliente.html" class="btn btn-md btn-outline-secondary">Quero encontrar um Dog Walker</a>
+                <div class="text-center">
+                    <a href="./criar-conta-cliente.html" class="btn btn-md btn-outline-secondary btn-block">Quero encontrar um Dog Walker</a>
+                </div>
             </div>
         </div>
-      </main>
-
-      <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <p>Projeto Interdisciplar - 99Dogs</p>
-        </div>
-      </footer>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="./assets/js/nav.js"></script>
 
-  </body>
+</body>
+
 </html>

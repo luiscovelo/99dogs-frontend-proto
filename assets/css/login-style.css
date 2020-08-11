@@ -1,5 +1,6 @@
-*, body {
-    font-family: 'Roboto', sans-serif;
+*,
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
 .limiter {
@@ -35,8 +36,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 100px 15px 80px 15px;
-    background-image: url('/assets/imgs/3824874.jpg');
+    padding: 230px 15px 60px 15px;
 }
 
 .login100 {
@@ -52,7 +52,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(199,199,199,0.2);
+    background-color: rgba(199, 199, 199, 0.2);
 }
 
 .input-border {
@@ -65,4 +65,18 @@
     display: grid;
     justify-content: center;
     align-items: center;
+}
+
+.title-login {
+    background: #ffffff;
+    padding: 5px 20px;
+    opacity: 0.9;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 480px) {
+    .login100 {
+        padding: 43px 15px 93px 15px;
+    }
 }
